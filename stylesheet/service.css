@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main {
+    font-family: sans-serif;
+}
+main .welcome {
+    text-align: justify;
+    padding: 20px;
+    line-height: 25px;
+    align-content: center;
+}
+.services-hold {
+    display: flex;
+    justify-content: center;
+    color: black;
+    
+}
+
+.services-hold .hold {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 4px 4px 5px 4px gainsboro ; 
+    transition: all .5s;
+    width: 300px;
+    justify-content: center;
+} 
+
+.services-hold .hold:hover {
+    transform: scale(0.8);
+    cursor: pointer;
+    
+}
+.services-hold h4 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    color: goldenrod;
+}  
