@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
 main {
@@ -36,4 +36,52 @@ main .welcome {
     text-align: center;
     color: rgb(0, 0, 0);
     color: goldenrod;
-}  
+} 
+
+.contact1 {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+}
+.iframe {
+    margin-right: 100px;
+    width: 80%;
+    height: auto;
+}
+.contact-form {
+    width: 600px;
+    height: 450px;
+    margin-left: 40px;
+    display: block;
+    box-shadow: 4px 4px 5px 4px gainsboro;
+    justify-content: center;
+    padding: 20px;
+    width: 30;
+    
+}
+.sendbotton {
+    width: 90%;
+    background-color: gold;
+    font-size: 15px;
+    border-radius: 4px;
+    border: none;
+    transition: all .5s;
+    text-align: center;
+   
+   
+}
+.sendbotton :hover {
+    background-color: black;
+    color: white;
+    width: 100%;
+    border: none;
+    transform: scale(0.8);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-form input {
+    width: 80%;
+    height: auto;
+}
