@@ -1,0 +1,68 @@
+
+footer {
+    background-color: goldenrod;
+    border-top: 6px; 
+    padding-bottom: 10px;
+}
+.footer-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-group .foot1, .foot2, .foot3 {
+width: 250px;
+margin: 10px 30px;
+height: 310px;
+}
+.foot1 button {
+    padding: 10px;
+    background-color: rgba(15, 62,163, 0.637);
+    border: none;
+    border-radius: 3px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.foot1 button:hover {
+    background-color: black;
+    color: goldenrod;
+}
+.foot2 span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.foot2 span i {
+    color: rgba(15, 62, 163, 0.637);
+    font-size: 20px;
+}
+.foot2 a {
+    color: black;
+    text-decoration: none;
+    transition: all .5s;
+}
+.foot2 a:hover {
+    color: rgba(15, 62, 163, 0.637);
+    text-decoration: underline;
+}
+.foot3 a {
+    color: black;
+    font-size: 25px;
+    margin: 0px 5px;
+    transition: all .5px;
+}
+.foot3 a:hover {
+    color:rgba(15, 62, 163, 0.637) ;
+}
+
+/* this is the javascript section */
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#lastmodified{
+  color: rgb(119, 0, 255);  
+}
