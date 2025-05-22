@@ -85,3 +85,15 @@ main .welcome {
     width: 80%;
     height: auto;
 }
+
+/*enhance mobile responsiveness:*/
+@media (max-width: 768px) {
+    .services-hold {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hold {
+        width: 90%;
+    }
+}

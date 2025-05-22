@@ -1,33 +1,19 @@
+<?php include 'header.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet/service.css">
+    <title>Service</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
 </head>
-<body>
-    <header></header>
-    <main>
-        <marquee><h1> <b>Welcome to Wulvan Hotel</b></h1></marquee>
-        <img src="images/wulvan hotel.webp" alt="Wulvan Hotel" width="500px" height="auto">
-        <div class="welcome">
-            <p>we're delighted to have you with us. Our commitment is to provide you with 
-                outstanding value and exceptional service throughout your stay.<br>
-                Whether you're here for business or leisure, we're thrilled you've 
-                chosen to stay with us. If there's anything we can do to make your 
-                stay more comfortable, please don’t hesitate to ask any of our team 
-                members; we're always happy to help. <br>
-                This directory is designed to help you get acquainted with the services 
-                we offer and to highlight points of interest in the surrounding communities. <br>
-                Thank you for choosing Wulvan Hotel. We hope your stay has been memorable, 
-                and we look forward to welcoming you back soon.
-            </p>
-        </div>
-        <!--  Services Section -->
 
-        <div id="service">
+<body>
+    
+<div id="service">
                 <h2> Our Services</h2>
         </div>
         <div class="services-hold">
@@ -104,33 +90,8 @@
             </div>
         </div>
 
-        <!--  Contact Section -->
-
-         <div class=" contact" id="contact">
-            <h2> Contact Us</h2><br><br>
-                <div class=" contact1">
-                    <div class="iframe">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.4914476779645!2d7.5829540724455855!3d9.018853189153008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0f346dadd90b%3A0x9dbe83f64c012b81!2s65%20Sani%20Abacha%20Rd%2C%20Abuja%20900101%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1747817895768!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"></iframe>
-                    </div>
-                    <div class=" contact-form">
-                        <h2>Send Us Message</h2>
-                        <form action="mailto:" method=" post">
-                            <label for="fname" required> First Name </label> 
-                            <input type="text" style="width: 100%; height: 25px; " id="fname" name="fname" placeholder="First name"><br> 
-                            <label for="mname">Middle Name </label> 
-                            <input type="text" style="width: 100%; height: 25px; " id="mname" name="mname" placeholder="Middle name"><br> 
-                            <label for="lname">Last Name </label> 
-                            <input type="text" style="width: 100%; height: 25px; " id="lname" name="lname" placeholder="Last name"><br>
-                            <label for="message"> Message </label> <br>
-                            <textarea name="message" style="width: 100%;" rows="6" cols="40"> </textarea><br>
-                            <div class="sendbotton">
-                                <input type="submit" value="Send" style="border: none; background-color: gold">
-                            </div>
-                        </form>
-                    </div>
-                    
-                </div>
-            </div>
-    <footer></footer>
 </body>
+
 </html>
+
+<?php include 'footer.php';?>
