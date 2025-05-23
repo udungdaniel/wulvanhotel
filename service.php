@@ -24,7 +24,7 @@
                     modern amenities, and impeccable cleanliness to ensure a restful stay.</p>
             </div>
             <div class="hold">
-            <img src="images/room.webp" width="300px" height="auto">
+            <img src="images/room.jpg" width="300px" height="auto">
                 <h4>Laundry Service</h4> <br>
                 <p>We offer prompt and professional laundry services for your 
                    convenience. Simply place your items in the laundry bag provided 
@@ -33,7 +33,7 @@
 
             </div>
             <div class="hold">
-            <img src="images/room.webp" width="300px" height="auto">
+            <img src="images/room.jpg" width="300px" height="auto">
                 <h4>Barbing Saloon</h4> <br>
                 <p>Enjoy professional grooming services at our in-house 
                    barbing salon. Our skilled barbers offer stylish cuts, 
@@ -43,7 +43,7 @@
         </div>
         <div class="services-hold">
             <div class="hold">
-            <img src="images/bar.webp" width="300px" height="auto">
+            <img src="images/bar1.webp" width="300px" height="auto">
                 <h4>Bar/Restaurant</h4> <br>
                 <p>Enjoy a delicious selection of local and international 
                    cuisine at our on-site restaurant, complemented by a wide 
@@ -83,7 +83,7 @@
                    memorable event.</p>
             </div>
             <div class="hold">
-                <img src="images/bar.webp" width="300px" height="auto">
+                <img src="images/wulvanswmi.jpg" width="300px" height="auto">
                 <h4>Swimming Pool</h4> <br>
                 <p>Enjoy a refreshing swim in our clean, well-maintained 
                 swimming pool, perfect for relaxation and recreation during your stay.</p>

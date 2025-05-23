@@ -32,7 +32,7 @@ body {
     /* ensures 3 items per row accounting for gap */
     max-width: calc(33.333% - 40px);
     /* prevents overflow */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 5px 4px goldenrod;
     padding: 20px;
     background-color: white;
     transition: transform 0.3s;
@@ -41,6 +41,7 @@ body {
 
 .hold h4 {
     color: goldenrod;
+    padding: 20px;
 }
 
 @media (max-width: 992px) {

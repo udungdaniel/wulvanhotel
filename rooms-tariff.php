@@ -13,7 +13,7 @@
 <body>
 
     <div id="service">
-        <h2>Room Rate</h2>
+        <h2 style = "color:goldenrod">Room Rate</h2>
     </div>
 
     <div class="services-hold">
