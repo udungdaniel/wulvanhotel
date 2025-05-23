@@ -21,9 +21,13 @@
                     }
                 }
               ?>
-              <div class="col-sm-4 wowload fadeInUp"><a href="images/photos/1.jpg" title="supermarket" class="gallery-image" data-gallery><img src="images/photos/1.jpg" class="img-responsive"></a></div>
-              <div class="col-sm-4 wowload fadeInUp"><a href="images/photos/2.jpg" title="bar" class="gallery-image" data-gallery><img src="images/photos/2.jpg" class="img-responsive"></a></div>
-              <div class="col-sm-4 wowload fadeInUp"><a href="images/photos/H14.jpg" title="swimmingPool" class="gallery-image" data-gallery><img src="images/photos/3.jpg" class="img-responsive"></a></div>
+              <div> <img src="images/photos/1.jpg" class="img-responsive"></a></div>
+              <div> <img src="images/photos/2.jpg" class="img-responsive"></a></div>
+              <div><img src="images/photos/3.jpg" class="img-responsive"></a></div>
+
+              <div> <img src="images/photos/1.jpg" class="img-responsive"></a></div>
+              <div> <img src="images/photos/2.jpg" class="img-responsive"></a></div>
+              <div><img src="images/photos/3.jpg" class="img-responsive"></a></div>
        </div>
 </div>
 <?php include 'footer.php';?>
