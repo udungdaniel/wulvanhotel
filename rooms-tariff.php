@@ -55,9 +55,10 @@
             <p><b>WEEK RATE = ₦25,000.00</b></p>
         </div>
         <div class="hold">
-            <img src="images/aura room.webp" alt="Room">
+            <img src="images/aura room.webp" alt=" Room">
             <h4><b>AURA Room</b></h4>
-            <p>Our rooms are designed with your comfort in mind, offering a relaxing atmosphere, modern amenities, and
+            <p>Our rooms are designed with your comfort in mind, offering a relaxing atmosphere, modern amenities,
+                and
                 cleanliness to ensure a restful stay.</p>
             <p><b>WEEKEND RATE = ₦32,000.00</b></p>
         </div>
