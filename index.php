@@ -29,94 +29,86 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>"></iframe></div>
             </div>
             <div class="col-sm-5 col-md-4">
-                <h3>Reservation</h3>
-                <?php
-        require_once('db.php');
-        $error = "";
-        $color = "red";
-        if(isset($_POST['submit'])){
-            $name = mysqli_real_escape_string($con,$_POST['name']);
-            $email = mysqli_real_escape_string($con,$_POST['email']);
-            $phone = mysqli_real_escape_string($con,$_POST['phone']);
-            $day = $_POST['day'];
-            $month = $_POST['month'];
-            $year = $_POST['year'];
-            $adults = $_POST['no_adults'];
-            $rooms = $_POST['no_rooms'];
-            $message = mysqli_real_escape_string($con,$_POST['message']);
+                <h3 style="color:goldenrod">Reservation </h3><?php require_once('db.php');
+                    $error="";
+                    $color="red";
 
-            $q = "SELECT * FROM requests ORDER BY requests.id DESC LIMIT 1";
-            $r = mysqli_query($con, $q);
-            if(mysqli_num_rows($r) > 0){
-                $row = mysqli_fetch_array($r);
-                $id = $row['id'];
-                $id = $id + 1;
-            }
-            else{
-                $id = 1;
-            }
+                    if(isset($_POST['submit'])) {
+                        $name=mysqli_real_escape_string($con, $_POST['name']);
+                        $email=mysqli_real_escape_string($con, $_POST['email']);
+                        $phone=mysqli_real_escape_string($con, $_POST['phone']);
+                        $day=$_POST['day'];
+                        $month=$_POST['month'];
+                        $year=$_POST['year'];
+                        $adults=$_POST['no_adults'];
+                        $rooms=$_POST['no_rooms'];
+                        $message=mysqli_real_escape_string($con, $_POST['message']);
+
+                        $q="SELECT * FROM requests ORDER BY requests.id DESC LIMIT 1";
+                        $r=mysqli_query($con, $q);
+
+                        if(mysqli_num_rows($r) > 0) {
+                            $row=mysqli_fetch_array($r);
+                            $id=$row['id'];
+                            $id=$id+1;
+                        }
+
+                        else {
+                            $id=1;
+                        }
 
 
-            if(empty($name) or empty($email) or empty($phone) or $adults == "no" or $rooms == "no" or empty($message) or $day == "no" or $month == "no" or $year == "no"){
-                $error = "All Feild is Required, Try Again";
+                        if(empty($name) or empty($email) or empty($phone) or $adults=="no"or $rooms=="no"or empty($message) or $day=="no"or $month=="no"or $year=="no") {
+                            $error="All Feild is Required, Try Again";
 
-            }
-            else{
-                $insert_query = "INSERT INTO `requests`(`id`, `name`, `email`, `phone`, `day`, `month`, `year`, `adults`, `rooms`, `message`) VALUES ('$id','$name','$email','$phone','$day','$month','$year','$adults','$rooms','$message')";
-                if(mysqli_query($con, $insert_query)){
-                    $error = "We've got your request";
-                    $color = "green";
-                }
-                else{
-                    $error = "Error occured";
-                }
-            }
-        }
-        
-    ?>
-                <label style="color: <?php echo $color; ?>">
-                    <?php
-            echo $error;
-        ?>
-                </label>
+                        }
+
+                        else {
+                            $insert_query="INSERT INTO `requests`(`id`, `name`, `email`, `phone`, `day`, `month`, `year`, `adults`, `rooms`, `message`) VALUES ('$id','$name','$email','$phone','$day','$month','$year','$adults','$rooms','$message')";
+
+                            if(mysqli_query($con, $insert_query)) {
+                                $error="We've got your request";
+                                $color="green";
+                            }
+
+                            else {
+                                $error="Error occured";
+                            }
+                        }
+                    }
+
+                    ?><label style="color: <?php echo $color; ?>"><?php echo $error;
+                    ?></label>
                 <form role="form" class="wowload fadeInRight" method="post">
-                    <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Name">
+                    <div class="form-group"><input type="text" name="name" class="form-control" placeholder="Name">
                     </div>
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-control" placeholder="Email">
+                    <div class="form-group"><input type="email" name="email" class="form-control" placeholder="Email">
                     </div>
-                    <div class="form-group">
-                        <input type="Phone" name="phone" class="form-control" placeholder="Phone">
+                    <div class="form-group"><input type="Phone" name="phone" class="form-control" placeholder="Phone">
                     </div>
                     <div class="form-group">
                         <div class="row">
-                            <div class="col-xs-6">
-                                <select class="form-control" name="no_rooms">
+                            <div class="col-xs-6"><select class="form-control" name="no_rooms">
                                     <option value="no">No. of Rooms</option>
                                     <option value="i">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
                                     <option value="5">5</option>
-                                </select>
-                            </div>
-                            <div class="col-xs-6">
-                                <select class="form-control" name="no_adults">
+                                </select></div>
+                            <div class="col-xs-6"><select class="form-control" name="no_adults">
                                     <option value="no">No. of Adults</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
                                     <option value="5">5</option>
-                                </select>
-                            </div>
+                                </select></div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="row">
-                            <div class="col-xs-4">
-                                <select class="form-control col-sm-2" name="day" id="day">
+                            <div class="col-xs-4"><select class="form-control col-sm-2" name="day" id="day">
                                     <option value="no">Day</option>
                                     <option value="01">1</option>
                                     <option value="02">2</option>
@@ -149,11 +141,8 @@
                                     <option value="29">29</option>
                                     <option value="30">30</option>
                                     <option value="31">31</option>
-
-                                </select>
-                            </div>
-                            <div class="col-xs-4">
-                                <select class="form-control col-sm-2" name="month" id="month">
+                                </select></div>
+                            <div class="col-xs-4"><select class="form-control col-sm-2" name="month" id="month">
                                     <option value="no">Month</option>
                                     <option value="01">January</option>
                                     <option value="02">February</option>
@@ -167,10 +156,8 @@
                                     <option value="10">October</option>
                                     <option value="11">November</option>
                                     <option value="12">December</option>
-                                </select>
-                            </div>
-                            <div class="col-xs-4">
-                                <select class="form-control" name="year">
+                                </select></div>
+                            <div class="col-xs-4"><select class="form-control" name="year">
                                     <option value="no">Year</option>
                                     <option value="2025">2025</option>
                                     <option value="2026">2026</option>
@@ -179,23 +166,16 @@
                                     <option value="2029">2029</option>
                                     <option value="2030">2030</option>
                                     <option value="2031">2031</option>
-                                </select>
-                            </div>
+                                </select></div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="message" placeholder="Message" rows="4"></textarea>
-                    </div>
-                    <input type="submit" class="btn" style="background-color: goldenrod; color: black; border: none"
-                        value="Request a reservation" name="submit">
+                    <div class="form-group"><textarea class="form-control" name="message" placeholder="Message"
+                            rows="4"></textarea></div><input type="submit" class="btn"
+                        style="background-color: goldenrod; color: black; border: none" value="Request a reservation"
+                        name="submit">
                 </form>
             </div>
         </div>
     </div>
-</div>
-
-
-
-
-
-<?php include 'footer.php';?>
+</div><?php include 'footer.php';
+                    ?>
