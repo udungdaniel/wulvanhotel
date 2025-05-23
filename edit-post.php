@@ -6,7 +6,7 @@ if(!isset($_SESSION['username'])){
 
 $session_username = $_SESSION['username'];
 $session_role = $_SESSION['role'];
-$session_author_image = $_SESSION['author_image'];
+$session_author_image = $_SESSION['author_image']; 
 
 if(isset($_GET['edit'])){
     $edit_id = $_GET['edit'];
@@ -36,10 +36,11 @@ else{
     header('location: posts.php');
 }
 ?>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="wrapper">
-<?php require_once('inc/header.php');?>
+        <?php require_once('inc/header.php');?>
 
         <div class="container-fluid body-section">
             <div class="row">
@@ -47,10 +48,11 @@ else{
                     <?php require_once('inc/sidebar.php');?>
                 </div>
                 <div class="col-md-9">
-                    <h1><i class="fa fa-pencil"></i> Edit Post <small>Edit Post Details</small></h1><hr>
+                    <h1><i class="fa fa-pencil"></i> Edit Post <small>Edit Post Details</small></h1>
+                    <hr>
                     <ol class="breadcrumb">
-                      <li><a href="index.php"><i class="fa fa-tachometer"></i> Dashboard</a></li>
-                      <li class="active"><i class="fa fa-pencil"></i> Edit Post</li>
+                        <li><a href="index.php"><i class="fa fa-tachometer"></i> Dashboard</a></li>
+                        <li class="active"><i class="fa fa-pencil"></i> Edit Post</li>
                     </ol>
                     <?php
                     if(isset($_POST['update'])){
@@ -101,17 +103,19 @@ else{
                                         echo "<span class='pull-right' style='color:red;'>$error</span>";
                                     }
                                     ?>
-                                    <input type="text" name="title" placeholder="Type Post Title Here" value="<?php if(isset($title)){echo $title;}?>" class="form-control">
+                                    <input type="text" name="title" placeholder="Type Post Title Here"
+                                        value="<?php if(isset($title)){echo $title;}?>" class="form-control">
                                 </div>
-                                
+
                                 <div class="form-group">
                                     <a href="media.php" class="btn btn-primary">Add Media</a>
                                 </div>
-                                
+
                                 <div class="form-group">
-                                    <textarea name="post-data" id="textarea" rows="10" class="form-control"><?php if(isset($post_data)){echo $post_data;}?></textarea>
+                                    <textarea name="post-data" id="textarea" rows="10"
+                                        class="form-control"><?php if(isset($post_data)){echo $post_data;}?></textarea>
                                 </div>
-                                
+
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
@@ -141,20 +145,25 @@ else{
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="tags">Tags:*</label>
-                                            <input type="text" name="tags" placeholder="Your Tags Here" value="<?php if(isset($tags)){echo $tags;}?>" class="form-control">
+                                            <input type="text" name="tags" placeholder="Your Tags Here"
+                                                value="<?php if(isset($tags)){echo $tags;}?>" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="status">Status:*</label>
                                             <select class="form-control" name="status" id="status">
-                                                <option value="publish" <?php if(isset($status) and $status == 'publish'){echo "selected";}?>>Publish</option>
-                                                <option value="draft" <?php if(isset($status) and $status == 'draft'){echo "selected";}?>>Draft</option>
+                                                <option value="publish"
+                                                    <?php if(isset($status) and $status == 'publish'){echo "selected";}?>>
+                                                    Publish</option>
+                                                <option value="draft"
+                                                    <?php if(isset($status) and $status == 'draft'){echo "selected";}?>>
+                                                    Draft</option>
                                             </select>
                                         </div>
                                     </div>
@@ -167,4 +176,4 @@ else{
             </div>
         </div>
 
-<?php require_once('inc/footer.php');?>
+        <?php require_once('inc/footer.php');?>
