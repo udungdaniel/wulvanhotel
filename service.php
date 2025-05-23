@@ -24,7 +24,7 @@
                 modern amenities, and impeccable cleanliness to ensure a restful stay.</p>
         </div>
         <div class="hold">
-            <img src="images/Laundry.wepb" width="300px" height="auto">
+            <img src="images/laundry.webp" width="300px" height="auto">
             <h4>Laundry Service</h4> <br>
             <p>We offer prompt and professional laundry services for your
                 convenience. Simply place your items in the laundry bag provided
@@ -32,8 +32,8 @@
                 for requests made before 10:00 AM.</p>
 
         </div>
-        <div class="hold">
-            <img src="images/room.jpg" width="300px" height="auto">
+        <div class=" hold">
+            <img src="images/barbing saloon.webp" width="300px" height="auto">
             <h4>Barbing Saloon</h4> <br>
             <p>Enjoy professional grooming services at our in-house
                 barbing salon. Our skilled barbers offer stylish cuts,
