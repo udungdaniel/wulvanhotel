@@ -25,7 +25,7 @@
         </div>
         <div class="hold">
             <img src="images/Laundry.wepb" width="300px" height="auto">
-            h4>Laundry Service</h4> <br>
+            <h4>Laundry Service</h4> <br>
             <p>We offer prompt and professional laundry services for your
                 convenience. Simply place your items in the laundry bag provided
                 and contact the front desk for pickup. Same-day service is available
