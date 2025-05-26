@@ -33,7 +33,7 @@
 
         </div>
         <div class="hold">
-            <img src="images/room.jpg" width="300px" height="auto">
+            <img src="images/barbing saloon.webp" width="300px" height="auto">
             <h4>Barbing Saloon</h4> <br>
             <p>Enjoy professional grooming services at our in-house
                 barbing salon. Our skilled barbers offer stylish cuts,
