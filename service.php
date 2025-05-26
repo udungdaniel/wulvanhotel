@@ -52,7 +52,7 @@
         </div>
         <div class="hold">
             <img src="images/arabiccoffee.webp" width="300px" height="auto">
-            <h4>Cofee/Arabia Tea</h4> <br>
+            <h4>Coffee/Arabia Tea</h4> <br>
             <p>Enjoy a freshly brewed cup of coffee or traditional
                 Arabian tea, available daily. A perfect way to start
                 your day or unwind at any time during your stay.</p>
