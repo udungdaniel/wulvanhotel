@@ -25,7 +25,7 @@ require_once('header.php');
           <div class="col-md-4"></div>
           <div class="col-md-4">
               <form class="form-signin animated shake" action="" method="post">
-                <h2 class="form-signin-heading">Admin Login</h2>
+                <h2 class="form-signin-heading">Login Panel</h2>
                 <label for="inputEmail" class="sr-only">Username</label>
                 <input type="text" id="inputEmail" name="username" class="form-control" placeholder="Username" required autofocus>
                 <label for="inputPassword" class="sr-only">Password</label>
