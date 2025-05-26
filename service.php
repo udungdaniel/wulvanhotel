@@ -69,7 +69,7 @@
     <div class="services-hold">
         <div class="hold">
             <img src="images/barbecue.webp" width="300px" height="auto">
-            <h4>Barbeue</h4> <br>
+            <h4>Barbeque</h4> <br>
             <p>Enjoy our delicious barbecue, featuring expertly
                 grilled meats and flavorful sides; perfect for a casual
                 and satisfying meal.</p>
