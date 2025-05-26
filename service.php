@@ -43,7 +43,7 @@
         </div>
         <div class="services-hold">
             <div class="hold">
-            <img src="images/bar1.webp" width="300px" height="auto">
+            <img src="images/restaurant.webp" width="300px" height="auto">
                 <h4>Bar/Restaurant</h4> <br>
                 <p>Enjoy a delicious selection of local and international 
                    cuisine at our on-site restaurant, complemented by a wide 
@@ -51,14 +51,14 @@
                    and dinner in a relaxed and inviting atmosphere.</p>
             </div>
             <div class="hold">
-            <img src="images/room.webp" width="300px" height="auto">
+            <img src="images/arabiccoffee.webp" width="300px" height="auto">
                 <h4>Cofee/Arabia Tea</h4> <br>
                 <p>Enjoy a freshly brewed cup of coffee or traditional 
                    Arabian tea, available daily. A perfect way to start 
                    your day or unwind at any time during your stay.</p>
             </div>
             <div class="hold">
-            <img src="images/room.webp" width="300px" height="auto">
+            <img src="images/Supermarket.webp" width="300px" height="auto">
             <h4>Supermarket</h4> <br>
             <p>Conveniently located within the hotel premises, 
                our supermarket offers a wide selection of everyday 
@@ -68,14 +68,14 @@
         </div>
         <div class="services-hold">
             <div class="hold">
-            <img src="images/bar.webp" width="300px" height="auto">
+            <img src="images/barbecue.webp" width="300px" height="auto">
                 <h4>Barbeue</h4> <br>
                 <p>Enjoy our delicious barbecue, featuring expertly 
                    grilled meats and flavorful sides; perfect for a casual 
                    and satisfying meal.</p> 
             </div>
             <div class="hold">
-            <img src="images/bar.webp" width="300px" height="auto">
+            <img src="images/events-centre.webp" width="300px" height="auto">
                 <h4>Event Centre</h4> <br>
                 <p>Our Event Centre offers a versatile space perfect 
                    for conferences, meetings, weddings, and special occasions, 
@@ -83,7 +83,7 @@
                    memorable event.</p>
             </div>
             <div class="hold">
-                <img src="images/wulvanswmi.jpg" width="300px" height="auto">
+                <img src="images/swimmingpool.webp" width="300px" height="auto">
                 <h4>Swimming Pool</h4> <br>
                 <p>Enjoy a refreshing swim in our clean, well-maintained 
                 swimming pool, perfect for relaxation and recreation during your stay.</p>
