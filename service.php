@@ -24,7 +24,7 @@
                 modern amenities, and impeccable cleanliness to ensure a restful stay.</p>
         </div>
         <div class="hold">
-            <img src="images/laundry.webp" width="300px" height="auto">
+            <img src="images/Laundry.webp" width="300px" height="auto">
             <h4>Laundry Service</h4> <br>
             <p>We offer prompt and professional laundry services for your
                 convenience. Simply place your items in the laundry bag provided
