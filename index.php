@@ -10,6 +10,7 @@
         <div class="wrap-info">
             <div class="information">
                 <h1 class="animated fadeInDown">Experience Modest Comfort And Luxury</h1>
+                <h1 class="animated fadeInDown">Experience Modest Comfort</h1>
                 <p class="animated fadeInUp">we're delighted to have you with us. </p>
             </div>
             <a href="#information" class="arrow-nav scroll wowload fadeInDownBig"><i class="fa fa-angle-down"></i></a>
