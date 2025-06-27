@@ -1,181 +1,147 @@
-<?php include 'header.php';?>
+<?php include 'header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your hotel in Sani Abacha Road, Mararaba offers luxury rooms like Breeze, Sterling, and Aura at affordable rates. Book now for an unforgettable stay.">
+<meta name="keywords" content="hotel in Mararaba, hotels in Karu L.G.A, affordable hotel, affordable rooms, Breeze Room, Sterling Room, Aura Room, hotel booking">
+<meta name="robots" content="index, follow">
 
+    <title>Reservation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .form-control, textarea {
+            width: 100% !important;
+        }
+        .btn {
+            background-color: goldenrod;
+            color: white;
+            border: none;
+        }
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+        @media screen and (max-width: 768px) {
+            .row > div {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
 
-
-
-<!-- banner -->
+<!-- Banner -->
 <div class="banner">
     <img src="images/photos/banner.jpg" class="img-responsive" alt="slide">
     <div class="welcome-message">
         <div class="wrap-info">
             <div class="information">
-                <h1 class="animated fadeInDown">Best hotel in Sani Abacha Road</h1>
-                <p class="animated fadeInUp">we're delighted to have you with us. </p>
+                <h1 class="animated fadeInDown"> .... Luxury Redefined</h1>
+                <p class="animated fadeInUp">No. 65, Sani Abacha Road, Mararaba, Karu L.G.A, Nasarawa State</p>
             </div>
             <a href="#information" class="arrow-nav scroll wowload fadeInDownBig"><i class="fa fa-angle-down"></i></a>
         </div>
     </div>
 </div>
 
+<!-- Responsive Autoplay Video Section -->
+<div class="container">
+    <div class="embed-responsive embed-responsive-16by9">
+        <video class="embed-responsive-item" autoplay muted controls playsinline preload="auto">
+            <source src="videos/wulvanvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
 
-<!-- reservation-information -->
-<div id="information" class="spacer reserve-info ">
+<!-- Reservation Info -->
+<div id="information" class="spacer reserve-info">
     <div class="container">
         <div class="row">
-            <div class="col-sm-7 col-md-8">
-                <div class="embed-responsive embed-responsive-16by9 wowload fadeInLeft"><iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.4914476779645!2d7.5829540724455855!3d9.018853189153008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0f346dadd90b%3A0x9dbe83f64c012b81!2s65%20Sani%20Abacha%20Rd%2C%20Abuja%20900101%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1747817895768!5m2!1sen!2sng"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>"></iframe></div>
+            <!-- Map -->
+            <div class="col-sm-12 col-md-8">
+                <div class="embed-responsive embed-responsive-16by9 wowload fadeInLeft">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                </div>
             </div>
-            <div class="col-sm-5 col-md-4">
-                <h3 style="color:goldenrod">Reservation </h3><?php require_once('db.php');
-                    $error="";
-                    $color="red";
 
-                    if(isset($_POST['submit'])) {
-                        $name=mysqli_real_escape_string($con, $_POST['name']);
-                        $email=mysqli_real_escape_string($con, $_POST['email']);
-                        $phone=mysqli_real_escape_string($con, $_POST['phone']);
-                        $day=$_POST['day'];
-                        $month=$_POST['month'];
-                        $year=$_POST['year'];
-                        $adults=$_POST['no_adults'];
-                        $rooms=$_POST['no_rooms'];
-                        $message=mysqli_real_escape_string($con, $_POST['message']);
+            <!-- Reservation Form -->
+            <div class="col-sm-12 col-md-4" id = "book">
+                <h3 style="color:goldenrod">Reservation</h3>
+                <?php
+                require_once('db.php');
+                $error = "";
+                $color = "red";
 
-                        $q="SELECT * FROM requests ORDER BY requests.id DESC LIMIT 1";
-                        $r=mysqli_query($con, $q);
+                if (isset($_POST['submit'])) {
+                    $name = mysqli_real_escape_string($con, $_POST['name']);
+                    $email = mysqli_real_escape_string($con, $_POST['email']);
+                    $phone = mysqli_real_escape_string($con, $_POST['phone']);
+                    $day = $_POST['day'];
+                    $month = $_POST['month'];
+                    $year = $_POST['year'];
+                    $adults = $_POST['no_adults'];
+                    $rooms = $_POST['no_rooms'];
+                    $message = mysqli_real_escape_string($con, $_POST['message']);
 
-                        if(mysqli_num_rows($r) > 0) {
-                            $row=mysqli_fetch_array($r);
-                            $id=$row['id'];
-                            $id=$id+1;
+                    if (empty($name) || empty($email) || empty($phone) || $adults == "no" || $rooms == "no" || empty($message) || $day == "no" || $month == "no" || $year == "no") {
+                        $error = "Please fill all fields.";
+                    } else {
+                        $id = 1;
+                        $q = "SELECT * FROM requests ORDER BY id DESC LIMIT 1";
+                        $r = mysqli_query($con, $q);
+                        if (mysqli_num_rows($r) > 0) {
+                            $row = mysqli_fetch_array($r);
+                            $id = $row['id'] + 1;
                         }
 
-                        else {
-                            $id=1;
-                        }
+                        $insert_query = "INSERT INTO requests (id, name, email, phone, day, month, year, adults, rooms, message)
+                                        VALUES ('$id', '$name', '$email', '$phone', '$day', '$month', '$year', '$adults', '$rooms', '$message')";
 
-
-                        if(empty($name) or empty($email) or empty($phone) or $adults=="no"or $rooms=="no"or empty($message) or $day=="no"or $month=="no"or $year=="no") {
-                            $error="All Feild is Required, Try Again";
-
-                        }
-
-                        else {
-                            $insert_query="INSERT INTO `requests`(`id`, `name`, `email`, `phone`, `day`, `month`, `year`, `adults`, `rooms`, `message`) VALUES ('$id','$name','$email','$phone','$day','$month','$year','$adults','$rooms','$message')";
-
-                            if(mysqli_query($con, $insert_query)) {
-                                $error="We've got your request";
-                                $color="green";
-                            }
-
-                            else {
-                                $error="Error occured";
-                            }
+                        if (mysqli_query($con, $insert_query)) {
+                            $error = "We've received your reservation request.";
+                            $color = "green";
+                        } else {
+                            $error = "An error occurred.";
                         }
                     }
+                }
+                ?>
+                <label style="color: <?php echo $color; ?>"><?php echo $error; ?></label>
 
-                    ?><label style="color: <?php echo $color; ?>"><?php echo $error;
-                    ?></label>
-                <form role="form" class="wowload fadeInRight" method="post">
-                    <div class="form-group"><input type="text" name="name" class="form-control" placeholder="Name">
+                <form method="post">
+                    <div class="form-group"><input type="text" name="name" class="form-control" placeholder="Name"></div>
+                    <div class="form-group"><input type="email" name="email" class="form-control" placeholder="Email"></div>
+                    <div class="form-group"><input type="text" name="phone" class="form-control" placeholder="Phone"></div>
+                    <div class="form-group row">
+                        <div class="col-xs-6"><select name="no_rooms" class="form-control">
+                            <option value="no">No. of Rooms</option>
+                            <?php for ($i = 1; $i <= 5; $i++) echo "<option value='$i'>$i</option>"; ?>
+                        </select></div>
+                        <div class="col-xs-6"><select name="no_adults" class="form-control">
+                            <option value="no">No. of Adults</option>
+                            <?php for ($i = 1; $i <= 5; $i++) echo "<option value='$i'>$i</option>"; ?>
+                        </select></div>
                     </div>
-                    <div class="form-group"><input type="email" name="email" class="form-control" placeholder="Email">
+                    <div class="form-group row">
+                        <div class="col-xs-4"><select name="day" class="form-control"><option value="no">Day</option><?php for ($d = 1; $d <= 31; $d++) echo "<option value='".str_pad($d, 2, '0', STR_PAD_LEFT)."'>$d</option>"; ?></select></div>
+                        <div class="col-xs-4"><select name="month" class="form-control"><option value="no">Month</option><?php foreach (range(1, 12) as $m) echo "<option value='".str_pad($m, 2, '0', STR_PAD_LEFT)."'>".date("F", mktime(0, 0, 0, $m, 10))."</option>"; ?></select></div>
+                        <div class="col-xs-4"><select name="year" class="form-control"><option value="no">Year</option><?php for ($y = 2025; $y <= 2031; $y++) echo "<option value='$y'>$y</option>"; ?></select></div>
                     </div>
-                    <div class="form-group"><input type="Phone" name="phone" class="form-control" placeholder="Phone">
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-xs-6"><select class="form-control" name="no_rooms">
-                                    <option value="no">No. of Rooms</option>
-                                    <option value="i">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></div>
-                            <div class="col-xs-6"><select class="form-control" name="no_adults">
-                                    <option value="no">No. of Adults</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-xs-4"><select class="form-control col-sm-2" name="day" id="day">
-                                    <option value="no">Day</option>
-                                    <option value="01">1</option>
-                                    <option value="02">2</option>
-                                    <option value="03">3</option>
-                                    <option value="04">4</option>
-                                    <option value="05">5</option>
-                                    <option value="06">6</option>
-                                    <option value="07">7</option>
-                                    <option value="08">8</option>
-                                    <option value="09">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                    <option value="16">16</option>
-                                    <option value="17">17</option>
-                                    <option value="18">18</option>
-                                    <option value="19">19</option>
-                                    <option value="20">20</option>
-                                    <option value="21">21</option>
-                                    <option value="22">22</option>
-                                    <option value="23">23</option>
-                                    <option value="24">24</option>
-                                    <option value="25">25</option>
-                                    <option value="26">26</option>
-                                    <option value="27">27</option>
-                                    <option value="28">28</option>
-                                    <option value="29">29</option>
-                                    <option value="30">30</option>
-                                    <option value="31">31</option>
-                                </select></div>
-                            <div class="col-xs-4"><select class="form-control col-sm-2" name="month" id="month">
-                                    <option value="no">Month</option>
-                                    <option value="01">January</option>
-                                    <option value="02">February</option>
-                                    <option value="03">March</option>
-                                    <option value="04">April</option>
-                                    <option value="05">May</option>
-                                    <option value="06">June</option>
-                                    <option value="07">July</option>
-                                    <option value="08">August</option>
-                                    <option value="09">September</option>
-                                    <option value="10">October</option>
-                                    <option value="11">November</option>
-                                    <option value="12">December</option>
-                                </select></div>
-                            <div class="col-xs-4"><select class="form-control" name="year">
-                                    <option value="no">Year</option>
-                                    <option value="2025">2025</option>
-                                    <option value="2026">2026</option>
-                                    <option value="2027">2027</option>
-                                    <option value="2028">2028</option>
-                                    <option value="2029">2029</option>
-                                    <option value="2030">2030</option>
-                                    <option value="2031">2031</option>
-                                </select></div>
-                        </div>
-                    </div>
-                    <div class="form-group"><textarea class="form-control" name="message" placeholder="Message"
-                            rows="4"></textarea></div><input type="submit" class="btn"
-                        style="background-color: goldenrod; color: black; border: none" value="Request a reservation"
-                        name="submit">
+                    <div class="form-group"><textarea name="message" class="form-control" rows="4" placeholder="Message"></textarea></div>
+                    <input type="submit" class="btn btn-block" value="Make a Reservation" name="submit">
                 </form>
             </div>
         </div>
     </div>
-</div><?php include 'footer.php';
-                    ?>
+</div>
+
+<?php include 'footer.php'; ?>
+</body>
+</html>
