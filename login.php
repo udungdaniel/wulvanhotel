@@ -23,26 +23,25 @@ if (isset($_POST['submit'])) {
 require_once('header.php');
 ?>
 
-<div class="container" style="margin-top: 60px;">
-    <div class="row justify-content-center">
-        <div class="col-md-4">
-            <form class="form-signin animated shake" action="" method="post" autocomplete="off">
-                <h2 class="form-signin-heading text-center mb-4">Login Panel</h2>
 
-                <?php if ($error): ?>
-                    <div class="alert alert-danger" role="alert">
-                        <?= htmlspecialchars($error) ?>
-                    </div>
-                <?php endif; ?>
-
-                <div class="form-group">
-                    <label for="inputUsername" class="sr-only">Username</label>
-                    <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required autofocus>
-                </div>
-
-                <div class="form-group">
-                    <label for="inputPassword" class="sr-only">Password</label>
-                    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+              <form class="form-signin animated shake" action="" method="post">
+                <h2 class="form-signin-heading">Admin Login</h2>
+                <label for="inputEmail" class="sr-only">Username</label>
+                <input type="text" id="inputEmail" name="username" class="form-control" placeholder="Username" required autofocus>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+                <div class="checkbox">
+                  <label>
+                    <?php
+                      if(isset($error)){
+                          echo "$error";
+                      }
+                      ?>
+                  </label>
                 </div>
 
                 <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign In</button>
