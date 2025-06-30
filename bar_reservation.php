@@ -61,6 +61,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 
+<p>Welcome to our Bar Reservation Form! Whether you’re planning an intimate gathering or a larger celebration, we’re here to help you secure the perfect spot. Please fill out the form below with your details, including your full name, contact information, preferred reservation date and time, and the expected number of guests.
+
+Select the seating capacity that best fits your group size—from our cozy Mini Hall for smaller parties to the spacious Conference Hall for larger groups. Feel free to include any special requests or accommodations you might need, and we’ll do our best to make your experience exceptional.
+
+Once submitted, your reservation will be reviewed, and one of our team members will get back to you shortly to confirm the details. Thank you for choosing us—we look forward to welcoming you!
+
+    </p>
+
 <div class="container">
     <h2 class="text-center" style="color: goldenrod;">Bar Reservation Form</h2>
 
