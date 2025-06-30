@@ -72,11 +72,7 @@ require_once('db.php');
 <div id="information" class="spacer reserve-info">
     <div class="container">
         <div class="row">
-            <!-- Map -->
-            <div class="col-sm-12 col-md-8">
-                <div class="embed-responsive embed-responsive-16by9 wowload fadeInLeft">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
-                </div>
+           
             <!-- Map -->
             <div class="col-sm-12 col-md-8">
                 <div class="embed-responsive embed-responsive-16by9 wowload fadeInLeft">
