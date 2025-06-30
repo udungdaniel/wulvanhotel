@@ -1,68 +1,110 @@
-
+/* Footer Styles */
 footer {
     background-color: goldenrod;
-    border-top: 6px; 
-    padding-bottom: 10px;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
 }
+
 .footer-group {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
-.footer-group .foot1, .foot2, .foot3 {
-width: 250px;
-margin: 10px 30px;
-height: 310px;
+
+.footer-group .foot1,
+.footer-group .foot2,
+.footer-group .foot3 {
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: center;
 }
+
 .foot1 button {
-    padding: 10px;
-    background-color: rgba(15, 62,163, 0.637);
+    padding: 10px 20px;
+    background-color: rgba(15, 62, 163, 0.637);
     border: none;
     border-radius: 3px;
-    transition: all .5s;
+    color: white;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
+
 .foot1 button:hover {
     background-color: black;
     color: goldenrod;
 }
+
 .foot2 span {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    margin-bottom: 10px;
 }
+
 .foot2 span i {
+    font-size: 18px;
     color: rgba(15, 62, 163, 0.637);
-    font-size: 20px;
 }
+
 .foot2 a {
-    color: black;
+    color: white;
     text-decoration: none;
-    transition: all .5s;
+    transition: color 0.3s ease;
 }
+
 .foot2 a:hover {
-    color: rgba(15, 62, 163, 0.637);
+    color: black;
     text-decoration: underline;
 }
+
 .foot3 a {
-    color: black;
-    font-size: 25px;
-    margin: 0px 5px;
-    transition: all .5px;
+    color: white;
+    font-size: 24px;
+    margin: 0 8px;
+    transition: color 0.3s ease;
 }
+
 .foot3 a:hover {
-    color:rgba(15, 62, 163, 0.637) ;
+    color: rgba(15, 62, 163, 0.637);
 }
 
-/* this is the javascript section */
-
+/* Date Section */
 .date {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
+    gap: 10px;
+    padding: 10px;
 }
-#lastmodified{
-  color: rgb(119, 0, 255);  
+
+#lastmodified {
+    color: rgb(119, 0, 255);
+}
+
+/* Responsive Embed (e.g., Google Map) */
+.embed-responsive iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Mobile-First Utility Classes */
+@media screen and (max-width: 768px) {
+    .footer-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-group .foot1,
+    .footer-group .foot2,
+    .footer-group .foot3 {
+        max-width: 100%;
+    }
+
+    .hold {
+        margin: 0 auto;
+    }
 }

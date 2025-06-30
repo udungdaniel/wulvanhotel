@@ -1,90 +1,72 @@
 <footer class="spacer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5">
-                    <h4>Wulvan Hotel Admin</h4>
-                    <p>As an admin you can do much staffs. You can add rooms in the database. On that case, you've to provide 4 images for each room. Yes, you can edit rooms. You can add as many rooms as you want. Don't worry, there is a cute delete button in all rooms page. You can delete the rooms if you want. You can watch or delete the feedbacks sent from the users &amp; contact them also. Same thing goes for requests also.</p>
-                </div>              
-                 
-                 <div class="col-sm-3">
-                    <h4>Quick Links</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="all-rooms.php">All Rooms</a></li>        
-                        <li><a href="add-room.php">Add Room</a></li>
-                        <li><a href="requests.php">Requests</a></li>
-                        <li><a href="feedback.php">Feedback</a></li>
-                        <li><a href="index.php">Main Site</a></li>
-                    </ul>
-                </div>
-                 <div class="col-sm-4 subscribe">
-                    <h4>Follow Us on Social Media</h4>
-                    
-                    <div class="social">
-                    <a href="http://www.facebook.com"><i class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" data-original-title="facebook"></i></a>
-                    <a href="http://www.instagram.com"><i class="fa fa-instagram"  data-toggle="tooltip" data-placement="top" data-original-title="instragram"></i></a>
-                    <a href="http://www.twitter.com"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" data-original-title="twitter"></i></a>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <h4>Wulvan Hotel Admin</h4>
+                <p>
+                    As an admin, you can do many tasks. You can add rooms in the database. 
+                    For each room, you need to provide 4 images. You can edit rooms as well. 
+                    Add as many rooms as you want. Don't worry, there is a cute delete button on the All Rooms page. 
+                    You can delete rooms if you want. You can watch or delete feedback sent from users and contact them. 
+                    The same applies to requests.
+                </p>
+            </div>
+
+            <div class="col-sm-3">
+                <h4>Quick Links</h4>
+                <ul class="list-unstyled">      
+                    <li><a href="requests.php">Reservation</a></li>
+                    <li><a href="index.php">Main Site</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4 subscribe">
+                <h4>Follow Us on Social Media</h4>
+                <div class="social">
+                    <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer" 
+                       data-toggle="tooltip" data-placement="top" title="Facebook">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer" 
+                       data-toggle="tooltip" data-placement="top" title="Instagram">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer" 
+                       data-toggle="tooltip" data-placement="top" title="Twitter">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
                 </div>
             </div>
-            <!--/.row--> 
         </div>
-        <!--/.container-->    
-    
-    <!--/.footer-bottom--> 
+        <!--/.row--> 
+    </div>
+    <!--/.container-->    
 </footer>
 
-<div class="text-center copyright">Copyright (c) reserved by <a href="index.php">Wulvan Hotel</a></div>
+<div class="text-center copyright">
+    &copy; <?= date('Y') ?> reserved by <a href="index.php">Wulvan Hotel</a>
+</div>
 
 <a href="#home" class="toTop scroll"><i class="fa fa-angle-up"></i></a>
 
-
-
-
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<!-- The Bootstrap Image Gallery lightbox -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <!-- The container for the modal slides -->
     <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
     <h3 class="title">title</h3>
     <a class="prev">‹</a>
     <a class="next">›</a>
     <a class="close">×</a>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->    
 </div>
 
-
-
-
-
+<!-- Scripts -->
 <script src="assets/jquery.js"></script>
-
-<!-- wow script -->
 <script src="assets/wow/wow.min.js"></script>
-
-<!-- uniform -->
 <script src="assets/uniform/js/jquery.uniform.js"></script>
-
-
-<!-- boostrap -->
-<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
-
-<!-- jquery mobile -->
+<script src="assets/bootstrap/js/bootstrap.js"></script>
 <script src="assets/mobile/touchSwipe.min.js"></script>
-
-<!-- jquery mobile -->
 <script src="assets/respond/respond.js"></script>
-
-<!-- gallery -->
 <script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
-
-
-<!-- custom script -->
 <script src="assets/script.js"></script>
 
 </body>
 </html>
-
-
-
-
-

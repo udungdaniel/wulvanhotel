@@ -1,68 +1,108 @@
 <?php 
-    require_once('db.php');
-    if(isset($_GET['del'])){
-        $del = $_GET['del'];
-        $q = "DELETE FROM requests WHERE requests.id = $del";
-        $run = mysqli_query($con, $q);
-    }
+
+session_start();
+if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'admin') {
+    header('Location: login.php');
+    exit();
+}
+
+require_once('db.php');
+
+// Handle delete request
+if (isset($_GET['del'])) {
+    $del = intval($_GET['del']);
+    $q = "DELETE FROM requests WHERE id = $del";
+    $run = mysqli_query($con, $q);
+}
 ?>
-  </head>
-  <body>
-    <div id="wrapper">
-<?php require_once('header-admin.php');?>
 
-        <div class="container-fluid body-section container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2><i class="fa fa-plus-square"></i> All Requests <small>Watch or Delete Request</small></h2>
-                    
-                    <div class="card">
-                        <div class="card-content table-responsive table-full-width">
-                            <table class="table">
-                                <thead class="text-danger">
-                                    <th><center>ID</center></th>
-                                    <th><center>Name</center></th>
-                                    <th><center>Email</center></th>
-                                    <th><center>Phone</center></th>
-                                    <th><center>Date</center></th>
-                                    <th><center>Adults</center></th>
-                                    <th><center>Rooms</center></th>
-                                    <th><center>Message</center></th>
-                                    <th><center>Delete</center></th>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                        $q = "SELECT * FROM requests ORDER BY requests.id ASC";
-                                        $run = mysqli_query($con, $q);
-                                        if(mysqli_num_rows($run) > 0){
-                                            while($row = mysqli_fetch_array($run)){
-                                        
-                                    ?>
-                                    <tr>
-                                        <td><center><?php echo $row['id']; ?></center></td>
-                                        <td><center><?php echo $row['name']; ?></center></td>
-                                        <td><center><?php echo $row['email']; ?></center></td>
-                                        <td class="text-primary"><center><?php echo $row['phone']; ?></center></td>
-                                        <td><center><?php echo $row['day']."-".$row['month']."-".$row['year']; ?></center></td>
-                                        <td><center><?php echo $row['adults']; ?></center></td>
-                                        <td><center><?php echo $row['rooms']; ?></center></td>
-                                        <td><center><?php echo $row['message']; ?></center></td>
-                                        <td><center><a href="requests.php?del=<?php echo $row['id']; ?>"><i class="fa fa-times"></i></a></center></td>
-                                    </tr>
-                                    <?php
-                                            }
-                                        }
-                                    ?>
-                                    
-                                </tbody>
-                            </table>
+<?php include('header-admin.php'); ?>
 
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Room Reservation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        h2 {
+            margin: 20px 0;
+            color: goldenrod;
+            text-align: center;
+        }
 
-<?php require_once('footer-admin.php');?>
+        .table-responsive {
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
+        th, td {
+            text-align: center;
+            vertical-align: middle !important;
+        }
+
+        .fa-times {
+            color: red;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            th, td {
+                font-size: 13px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2><i class="fa fa-plus-square"></i> All Reservation</h2>
+    <p class="text-center text-muted">View or delete reservation requests below.</p>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead class="bg-warning">
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                    <th>checkin Date</th>
+                    <th>checkout Date</th>
+                    <th>Room Type</th>
+                    <th>Message</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                    $q = "SELECT * FROM requests ORDER BY id ASC";
+                    $run = mysqli_query($con, $q);
+                    if (mysqli_num_rows($run) > 0) {
+                        while ($row = mysqli_fetch_assoc($run)) {
+                            echo "<tr>
+                                <td>{$row['id']}</td>
+                                <td>{$row['name']}</td>
+                                <td>{$row['email']}</td>
+                                <td>{$row['phone']}</td>
+                                <td>{$row['checkin']}</td>
+                                <td>{$row['checkout']}</td>
+                                <td>{$row['room_type']}</td>
+                                <td>{$row['message']}</td>
+                                <td><a href='requests.php?del={$row['id']}' onclick=\"return confirm('Are you sure you want to delete this reservation?');\"><i class='fa fa-times'></i></a></td>
+                            </tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='9'>No reservation requests found.</td></tr>";
+                    }
+                ?>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<?php include('footer-admin.php'); ?>
+</body>
+</html>

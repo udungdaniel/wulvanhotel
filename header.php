@@ -1,83 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Wulvan Hotel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Wulvan Center</title>
 
-<!-- Google fonts -->
-<link href='http://fonts.googleapis.com/css?family=Raleway:300,500,800|Old+Standard+TT' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Raleway:300,500,800' rel='stylesheet' type='text/css'>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,800|Old+Standard+TT" rel="stylesheet">
 
-<!-- font awesome -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 
-<!-- bootstrap -->
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <!-- Uniform CSS -->
+    <link rel="stylesheet" href="assets/uniform/css/uniform.default.min.css">
 
-<!-- uniform -->
-<link type="text/css" rel="stylesheet" href="assets/uniform/css/uniform.default.min.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="assets/wow/animate.css">
 
-<!-- animate.css -->
-<link rel="stylesheet" href="assets/wow/animate.css" />
+    <!-- Gallery -->
+    <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
 
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
 
-<!-- gallery -->
-<link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/style.css">
 
+    <!-- Optional Custom Styles -->
+    <style>
+        .navbar {
+            background-color: goldenrod;
+            border: none;
+            margin-bottom: 0;
+        }
 
-<!-- favicon -->
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+        .navbar .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
 
-<link rel="stylesheet" href="assets/style.css">
+        .navbar .navbar-brand img {
+            margin-right: 10px;
+        }
 
+        .navbar .navbar-brand span {
+            font-size: 18pt;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-nav > li > a {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar .navbar-brand span {
+                font-size: 14pt;
+            }
+        }
+    </style>
 </head>
 
 <body id="home">
 
+<!-- Navigation -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <!-- Mobile toggle -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#main-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-<!-- top 
-  <form class="navbar-form navbar-left newsletter" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Enter Your Email Id Here">
+            <a class="navbar-brand" href="index.php">
+                <img src="images/logo.webp" alt="Wulvan Logo" width="45px">
+                <span>Wulvan Center</span>
+            </a>
         </div>
-        <button type="submit" class="btn btn-inverse">Subscribe</button>
-    </form>
- top -->
 
-<!-- header -->
-<nav class="navbar navbar-inverse" style="background-color: goldenrod; border: none;" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-      <a class="navbar-brand" href="index.php" style="display: flex; align-items: center;">
-        <img src="images/logo.webp" alt="Wulvan Logo" width="45px" style="margin-right: 10px;">
-        <span style="font-size: 18pt; font-family: Georgia; color: white; font-weight: bold;">Wulvan Hotel</span>
-      </a>
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse navbar-right" id="main-navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="rooms-tariff.php">Book a Room</a></li>
+                <li><a href="hall_requests.php">Book Event Hall</a></li>
+                <li><a href="bar_reservation.php">Bar Section</a></li>
+                <li><a href="service.php">Services</a></li>
+                <li><a href="gallery.php">Gallery</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="login.php">Admin</a></li>
+            </ul>
+        </div>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav">        
-        <li><a href="index.php">Home </a></li>
-        <li><a href="rooms-tariff.php">Rooms Rate</a></li>
-        <li><a href="service.php">Services</a></li>
-        <li><a href="gallery.php">Gallery</a></li>
-        <li><a href="contact.php">Contact</a></li>
-        <li><a href="login.php">Admin</a></li>
-      </ul>
-    </div><!-- Wnavbar-collapse -->
-  </div><!-- container-fluid -->
 </nav>
-<!-- header -->
-
+<!-- /Navigation -->
