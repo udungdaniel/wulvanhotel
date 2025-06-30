@@ -61,10 +61,10 @@
         $rooms = [
             ["Breeze Room", "₦15,000.00", "WEEK DAY RATE", "images/breeze room.webp"],
             ["Breeze Room", "₦20,000.00", "WEEKEND RATE", "images/breeze room.webp"],
-            ["STERLING Room", "₦20,000.00", "WEEK DAY RATE", "images/sterlingroom.webp"],
-            ["STERLING Room", "₦28,000.00", "WEEKEND RATE", "images/sterlingroom.webp"],
-            ["AURA Room", "₦25,000.00", "WEEK DAY RATE", "images/auraroom.webp"],
-            ["AURA Room", "₦32,000.00", "WEEKEND RATE", "images/auraroom.webp"]
+            ["Sterling Room", "₦20,000.00", "WEEK DAY RATE", "images/sterlingroom.webp"],
+            ["Strerling Room", "₦28,000.00", "WEEKEND RATE", "images/sterlingroom.webp"],
+            ["Aura Room", "₦25,000.00", "WEEK DAY RATE", "images/auraroom.webp"],
+            ["Aura Room", "₦32,000.00", "WEEKEND RATE", "images/auraroom.webp"]
         ];
         foreach ($rooms as $room) {
             echo '<div class="hold">
