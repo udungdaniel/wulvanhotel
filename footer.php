@@ -3,7 +3,7 @@
         <div class="row">
 
             <div class="col-sm-3">
-                <h4>Wulvan Hotel</h4>
+                <h4>Wulvan Center</h4>
                 <p>
                     We care about our past customers, focus on our future customers &amp; of course our big focus always lies on the comfort of our customers. 
                     On our website, you can quickly request a booking. We'll let you know within 24 hours if rooms are available. 
@@ -44,7 +44,7 @@
 </footer>
 
 <div class="text-center copyright">
-    &copy; All rights reserved - <a href="index.php">Wulvan Hotel</a>
+    &copy; All rights reserved - <a href="index.php">Wulvan Center</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <br>Powered By: <a href="mailto:danfredcomputers@gmail.com">DanFred Computer Engineering Ltd</a>
 </div>

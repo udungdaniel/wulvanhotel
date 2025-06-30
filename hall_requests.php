@@ -92,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="email" id="email" name="email" required value="<?php echo htmlspecialchars($_POST['email'] ?? '') ?>">
 
         <!-- Event Details -->
-        <label for="eventName">Event Purpose:</label>
+        <label for="eventName">Event Type:</label>
         <input type="text" id="eventName" name="eventName" required value="<?php echo htmlspecialchars($_POST['eventName'] ?? '') ?>">
 
         <label for="eventDate">Date of Event:</label>
@@ -104,9 +104,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="endTime">End Time:</label>
         <input type="time" id="endTime" name="endTime" required value="<?php echo htmlspecialchars($_POST['endTime'] ?? '') ?>">
 
-        <label for="attendees">Expected Attendees:</label>
+        <label for="attendees">Hall Preference:</label>
         <select id="attendees" name="attendees" required>
-            <option value="" disabled <?php echo !isset($_POST['attendees']) ? 'selected' : ''; ?>>Select sitting capacity</option>
+            <option value="" disabled <?php echo !isset($_POST['attendees']) ? 'selected' : ''; ?>>Select seating capacity</option>
             <option value="small" <?php echo (($_POST['attendees'] ?? '') === 'small') ? 'selected' : ''; ?>>Min Hall (1–40 people)</option>
             <option value="medium" <?php echo (($_POST['attendees'] ?? '') === 'medium') ? 'selected' : ''; ?>>Int'l Conference Hall (1–500 people)</option>
         </select>

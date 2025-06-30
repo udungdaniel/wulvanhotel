@@ -146,7 +146,7 @@
                 <li><a href="service.php">Services</a></li>
                 <li><a href="rooms-tariff.php">Room Booking</a></li>
                 <li><a href="hall_requests.php">Event Hall Reservation</a></li>
-                <li><a href="bar_reservation.php">Bar Section</a></li>
+                <li><a href="bar_reservation.php">Bar Booking</a></li>
                 <li><a href="gallery.php">Gallery</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="login.php">Admin</a></li>
