@@ -154,11 +154,6 @@ require_once('db.php');
         </div>
     </div>
 </div>
-
-<?php include 'footer.php'; ?>
-</body>
-</html>
-
 </div>
 
 <?php include 'footer.php'; ?>
