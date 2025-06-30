@@ -11,6 +11,14 @@ if (isset($_POST['submit'])) {
 
     // Simple hardcoded login check - consider using DB and hashed passwords for production
     if ($username === "wulvanhotel" && $password === "wulvan2025") {
+$error = "";
+
+if (isset($_POST['submit'])) {
+    $username = mysqli_real_escape_string($con, strtolower($_POST['username']));
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+
+    // Simple hardcoded login check - consider using DB and hashed passwords for production
+    if ($username === "wulvanhotel" && $password === "wulvan2025") {
         $_SESSION['username'] = $username;
         $_SESSION['role'] = "admin";
         header('Location: requests.php');
@@ -19,6 +27,7 @@ if (isset($_POST['submit'])) {
         $error = "Wrong Username or Password";
     }
 }
+
 
 require_once('header.php');
 ?>
@@ -44,6 +53,14 @@ require_once('header.php');
                     <label for="inputPassword" class="sr-only">Password</label>
                     <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
                 </div>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<?php include 'footer.php'; ?>
 
                 <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign In</button>
             </form>

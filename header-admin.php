@@ -62,6 +62,10 @@
       <a class="navbar-brand" href="index.php" style="display: flex; align-items: center;">
         <img src="images/logo.webp" alt="Wulvan Logo" width="45px" style="margin-right: 10px;">
         <span style="font-size: 18pt; font-family: Georgia; color: white; font-weight: bold;">Wulvan Hotel</span>
+      
+      <a class="navbar-brand" href="index.php" style="display: flex; align-items: center;">
+        <img src="images/logo.webp" alt="Wulvan Logo" width="45px" style="margin-right: 10px;">
+        <span style="font-size: 18pt; font-family: Georgia; color: white; font-weight: bold;">Wulvan Hotel</span>
       </a>
     </div>
 

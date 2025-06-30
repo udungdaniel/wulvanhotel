@@ -10,25 +10,77 @@
 
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,800|Old+Standard+TT" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 
     <!-- Uniform CSS -->
     <link rel="stylesheet" href="assets/uniform/css/uniform.default.min.css">
+    <!-- Uniform CSS -->
+    <link rel="stylesheet" href="assets/uniform/css/uniform.default.min.css">
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="assets/wow/animate.css">
     <!-- Animate.css -->
     <link rel="stylesheet" href="assets/wow/animate.css">
 
     <!-- Gallery -->
     <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+    <!-- Gallery -->
+    <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
 
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" type="image/png">
 
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/style.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/style.css">
 
+    <!-- Optional Custom Styles -->
+    <style>
+        .navbar {
+            background-color: goldenrod;
+            border: none;
+            margin-bottom: 0;
+        }
+
+        .navbar .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .navbar-brand img {
+            margin-right: 10px;
+        }
+
+        .navbar .navbar-brand span {
+            font-size: 18pt;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-nav > li > a {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar .navbar-brand span {
+                font-size: 14pt;
+            }
+        }
+    </style>
     <!-- Optional Custom Styles -->
     <style>
         .navbar {
@@ -102,4 +154,5 @@
         </div>
     </div>
 </nav>
+<!-- /Navigation -->
 <!-- /Navigation -->
