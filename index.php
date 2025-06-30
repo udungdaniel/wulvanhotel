@@ -56,27 +56,12 @@ require_once('db.php');
     </div>
 </div>
 
-<!-- Reservation Info -->
-<div id="information" class="spacer reserve-info">
-<!-- Responsive Autoplay Video Section -->
-<div class="container">
-    <div class="embed-responsive embed-responsive-16by9">
-        <video class="embed-responsive-item" autoplay muted controls playsinline preload="auto">
-            <source src="videos/wulvanvideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</div>
+
 
 <!-- Reservation Info -->
 <div id="information" class="spacer reserve-info">
     <div class="container">
         <div class="row">
-            <!-- Map -->
-            <div class="col-sm-12 col-md-8">
-                <div class="embed-responsive embed-responsive-16by9 wowload fadeInLeft">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
-                </div>
             <!-- Map -->
             <div class="col-sm-12 col-md-8">
                 <div class="embed-responsive embed-responsive-16by9 wowload fadeInLeft">

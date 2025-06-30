@@ -54,52 +54,53 @@
         <img src="images/room1.jpg" alt="Rooms">
         <h4>Rooms</h4>
         <p>Relax in our comfortable rooms, featuring modern amenities and pristine cleanliness for a restful stay.</p>
+        <button style= "background-color: goldenrod; text-decoration: none;"><a href="index.php#book" color: white; > Book Now</a></botton>
     </div>
 
     <div class="hold">
-        <img src="images/laundry.webp" alt="Laundry Service">
+        <img src="images/laundrysc.webp" alt="Laundry Service">
         <h4>Laundry Service</h4>
         <p>Fast, professional laundry service with same-day options for items picked up before 10:00 AM.</p>
     </div>
 
     <div class="hold">
-        <img src="images/barbing saloon.webp" alt="Barbing Saloon">
+        <img src="images/barbing saloon.jpg" alt="Barbing Saloon">
         <h4>Barbing Saloon</h4>
         <p>Expert barbers available for haircuts, shaves, and grooming—no appointment needed.</p>
     </div>
 
     <div class="hold">
-        <img src="images/restaurant.webp" alt="Restaurant & Bar">
+        <img src="images/barrest.jpg" alt="Restaurant & Bar">
         <h4>Bar/Restaurant</h4>
         <p>Enjoy local and international meals alongside a wide variety of drinks in our stylish bar and restaurant.</p>
     </div>
 
     <div class="hold">
-        <img src="images/arabiccoffee.webp" alt="Coffee">
+        <img src="images/arabic-coffee.webp" alt="Coffee">
         <h4>Coffee / Arabian Tea</h4>
         <p>Freshly brewed coffee and aromatic Arabian tea served daily to start or unwind your day.</p>
     </div>
 
     <div class="hold">
-        <img src="images/supermarket.webp" alt="Supermarket">
+        <img src="images/wulvansuper.jpg" alt="Supermarket">
         <h4>Supermarket</h4>
         <p>A convenient in-house supermarket with snacks, beverages, and personal essentials for your stay.</p>
     </div>
 
     <div class="hold">
-        <img src="images/barbecue.webp" alt="Babique">
+        <img src="images/cue..jpeg" alt="Babique">
         <h4>Barbecue</h4>
         <p>Delicious grilled dishes and sides served hot and fresh for a satisfying dining experience.</p>
     </div>
 
     <div class="hold">
-        <img src="images/events-centre.webp" alt="Event Centre">
+        <img src="images/events-centre.jpg" alt="Event Centre">
         <h4>Event Centre</h4>
         <p>Spacious and equipped for weddings, meetings, and conferences with full event support.</p>
     </div>
 
     <div class="hold">
-        <img src="images/swimmingpool.webp" alt="Swimming Pool">
+        <img src="images/wulvanswim.jpg" alt="Swimming Pool">
         <h4>Swimming Pool</h4>
         <p>Take a dip in our clean and refreshing pool—perfect for relaxation and leisure.</p>
     </div>
