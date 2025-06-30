@@ -62,6 +62,10 @@
       <a class="navbar-brand" href="index.php" style="display: flex; align-items: center;">
         <img src="images/logo.webp" alt="Wulvan Logo" width="45px" style="margin-right: 10px;">
         <span style="font-size: 18pt; font-family: Georgia; color: white; font-weight: bold;">Wulvan Hotel</span>
+      
+      <a class="navbar-brand" href="index.php" style="display: flex; align-items: center;">
+        <img src="images/logo.webp" alt="Wulvan Logo" width="45px" style="margin-right: 10px;">
+        <span style="font-size: 18pt; font-family: Georgia; color: white; font-weight: bold;">Wulvan Hotel</span>
       </a>
     </div>
 
@@ -69,10 +73,10 @@
     <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
       
       <ul class="nav navbar-nav">        
-        <li><a href="index.php">Main Site</a></li>
-        <li><a href="#">All Room</a></li>        
-        <li><a href="add-room.php">Add Room</a></li>
-        <li><a href="requests.php">Requests</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="requests.php">Room Reservation</a></li>
+        <li><a href="hall_requests_view.php">Hall Reservation</a></li>
+        <li><a href="bar_reservations_view.php">Bar Reservation</a></li>
         <li><a href="feedback.php">Feedback</a></li>
         <li><a href="logout.php">Log Out</a></li>
       </ul>

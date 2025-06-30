@@ -1,4 +1,11 @@
 <?php 
+
+session_start();
+if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'admin') {
+    header('Location: login.php');
+    exit();
+}
+
 require_once('db.php');
 
 // Handle delete request
@@ -16,7 +23,7 @@ if (isset($_GET['del'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Requests</title>
+    <title>All Room Reservation</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
         h2 {
@@ -51,7 +58,7 @@ if (isset($_GET['del'])) {
 <body>
 
 <div class="container">
-    <h2><i class="fa fa-plus-square"></i> All Requests</h2>
+    <h2><i class="fa fa-plus-square"></i> All Reservation</h2>
     <p class="text-center text-muted">View or delete reservation requests below.</p>
 
     <div class="table-responsive">
@@ -59,12 +66,12 @@ if (isset($_GET['del'])) {
             <thead class="bg-warning">
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Date</th>
-                    <th>Adults</th>
-                    <th>Rooms</th>
+                    <th>Full Name</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                    <th>checkin Date</th>
+                    <th>checkout Date</th>
+                    <th>Room Type</th>
                     <th>Message</th>
                     <th>Delete</th>
                 </tr>
@@ -80,11 +87,11 @@ if (isset($_GET['del'])) {
                                 <td>{$row['name']}</td>
                                 <td>{$row['email']}</td>
                                 <td>{$row['phone']}</td>
-                                <td>{$row['day']}-{$row['month']}-{$row['year']}</td>
-                                <td>{$row['adults']}</td>
-                                <td>{$row['rooms']}</td>
+                                <td>{$row['checkin']}</td>
+                                <td>{$row['checkout']}</td>
+                                <td>{$row['room_type']}</td>
                                 <td>{$row['message']}</td>
-                                <td><a href='requests.php?del={$row['id']}' onclick=\"return confirm('Are you sure you want to delete this request?');\"><i class='fa fa-times'></i></a></td>
+                                <td><a href='requests.php?del={$row['id']}' onclick=\"return confirm('Are you sure you want to delete this reservation?');\"><i class='fa fa-times'></i></a></td>
                             </tr>";
                         }
                     } else {

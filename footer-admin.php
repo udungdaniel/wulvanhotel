@@ -14,11 +14,8 @@
 
             <div class="col-sm-3">
                 <h4>Quick Links</h4>
-                <ul class="list-unstyled">
-                    <li><a href="all-rooms.php">All Rooms</a></li>        
-                    <li><a href="add-room.php">Add Room</a></li>
-                    <li><a href="requests.php">Requests</a></li>
-                    <li><a href="feedback.php">Feedback</a></li>
+                <ul class="list-unstyled">      
+                    <li><a href="requests.php">Reservation</a></li>
                     <li><a href="index.php">Main Site</a></li>
                 </ul>
             </div>
@@ -44,14 +41,22 @@
         <!--/.row--> 
     </div>
     <!--/.container-->    
+        </div>
+        <!--/.row--> 
+    </div>
+    <!--/.container-->    
 </footer>
 
+<div class="text-center copyright">
+    &copy; <?= date('Y') ?> reserved by <a href="index.php">Wulvan Hotel</a>
+</div>
 <div class="text-center copyright">
     &copy; <?= date('Y') ?> reserved by <a href="index.php">Wulvan Hotel</a>
 </div>
 
 <a href="#home" class="toTop scroll"><i class="fa fa-angle-up"></i></a>
 
+<!-- The Bootstrap Image Gallery lightbox -->
 <!-- The Bootstrap Image Gallery lightbox -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
     <div class="slides"></div>
@@ -62,9 +67,11 @@
 </div>
 
 <!-- Scripts -->
+<!-- Scripts -->
 <script src="assets/jquery.js"></script>
 <script src="assets/wow/wow.min.js"></script>
 <script src="assets/uniform/js/jquery.uniform.js"></script>
+<script src="assets/bootstrap/js/bootstrap.js"></script>
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 <script src="assets/mobile/touchSwipe.min.js"></script>
 <script src="assets/respond/respond.js"></script>
