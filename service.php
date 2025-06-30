@@ -25,6 +25,7 @@
             flex: 1 1 300px;
             max-width: 320px;
             background: #f9f9f9;
+            box-shadow: 4px 4px 5px 4px goldenrod;
             padding: 15px;
             border-radius: 8px;
             text-align: center;
