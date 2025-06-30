@@ -58,6 +58,20 @@
     </div>
 
     <div class="hold">
+        <img src="images/events-centre.jpg" alt="Event Centre">
+        <h4>Event Centre</h4>
+        <p>Spacious and equipped for weddings, meetings, and conferences with full event support.</p>
+        <button style= "background-color: goldenrod; text-decoration: none;"><a href="index.php#book" color: white; > Book Now</a></botton>
+    </div>
+
+    <div class="hold">
+        <img src="images/barrest.jpg" alt="Restaurant & Bar">
+        <h4>Bar/Restaurant</h4>
+        <p>Enjoy local and international meals alongside a wide variety of drinks in our stylish bar and restaurant.</p>
+        <button style= "background-color: goldenrod; text-decoration: none;"><a href="index.php#book" color: white; > Book Now</a></botton>
+    </div>
+
+    <div class="hold">
         <img src="images/laundrysc.webp" alt="Laundry Service">
         <h4>Laundry Service</h4>
         <p>Fast, professional laundry service with same-day options for items picked up before 10:00 AM.</p>
@@ -66,13 +80,7 @@
     <div class="hold">
         <img src="images/barbing saloon.jpg" alt="Barbing Saloon">
         <h4>Barbing Saloon</h4>
-        <p>Expert barbers available for haircuts, shaves, and grooming—no appointment needed.</p>
-    </div>
-
-    <div class="hold">
-        <img src="images/barrest.jpg" alt="Restaurant & Bar">
-        <h4>Bar/Restaurant</h4>
-        <p>Enjoy local and international meals alongside a wide variety of drinks in our stylish bar and restaurant.</p>
+        <p>Expert barbers available for haircuts, shaves, and grooming no appointment needed.</p>
     </div>
 
     <div class="hold">
@@ -93,12 +101,7 @@
         <p>Delicious grilled dishes and sides served hot and fresh for a satisfying dining experience.</p>
     </div>
 
-    <div class="hold">
-        <img src="images/events-centre.jpg" alt="Event Centre">
-        <h4>Event Centre</h4>
-        <p>Spacious and equipped for weddings, meetings, and conferences with full event support.</p>
-    </div>
-
+    
     <div class="hold">
         <img src="images/wulvanswim.jpg" alt="Swimming Pool">
         <h4>Swimming Pool</h4>
