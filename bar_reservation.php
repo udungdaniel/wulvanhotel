@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <label for="guests">Expected Attendees:</label>
         <select id="guests" name="guests" required>
-            <option value="" disabled <?php echo !isset($_POST['guests']) ? 'selected' : ''; ?>>Select sitting capacity</option>
+            <option value="" disabled <?php echo !isset($_POST['guests']) ? 'selected' : ''; ?>>Select seating capacity</option>
             <option value="Mini Hall" <?php echo (($_POST['guests'] ?? '') === 'Mini Hall') ? 'selected' : ''; ?>> 1–10 people </option>
             <option value="Mini Hall" <?php echo (($_POST['guests'] ?? '') === 'Mini Hall') ? 'selected' : ''; ?>> 21–30 people </option>
             <option value="Conference Hall" <?php echo (($_POST['guests'] ?? '') === 'Conference Hall') ? 'selected' : ''; ?>>Above 31 people</option>
