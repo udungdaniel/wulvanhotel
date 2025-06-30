@@ -20,7 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `hotel`
 
---
 -- Table structure for table `feedback`
 --
 
