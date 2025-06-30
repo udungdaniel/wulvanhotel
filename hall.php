@@ -30,6 +30,10 @@
             display: flex;
             gap: 80px;
         }
+        #book {
+            background-color: goldenrod;
+            border-radius: 4px;
+        }
         
         @media screen and (max-width: 768px) {
             .row > div {
@@ -45,7 +49,7 @@
     <div class="container">
             <!-- Hall Reservation Form -->
             <div class="col-sm-12 col-md-4" id = "book">
-                <h3 style="color:goldenrod">Hall Booking Form</h3>
+                <h3 style="color:black">Hall Booking Form</h3>
                 <?php
                 require_once('db.php');
                 $error = "";
