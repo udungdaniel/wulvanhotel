@@ -46,8 +46,6 @@ require_once('db.php');
     </div>
 </div>
 
-<!-- Reservation Info -->
-<div id="information" class="spacer reserve-info">
 <!-- Responsive Autoplay Video Section -->
 <div class="container">
     <div class="embed-responsive embed-responsive-16by9">
@@ -58,11 +56,12 @@ require_once('db.php');
     </div>
 </div>
 
+
+
 <!-- Reservation Info -->
 <div id="information" class="spacer reserve-info">
     <div class="container">
         <div class="row">
-           
             <!-- Map -->
             <div class="col-sm-12 col-md-8">
                 <div class="embed-responsive embed-responsive-16by9 wowload fadeInLeft">
