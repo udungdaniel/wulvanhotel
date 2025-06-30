@@ -26,7 +26,7 @@
                 <h4>Address</h4>
                 <ul class="list-unstyled">
                     <li>Call us: <a href="tel:+2349022750031">+2349022750031</a></li>
-                    <li>Email us: <a href="mailto:info@wulvanhotel.com">info@wulvanhotel.com</a></li>
+                    <li>Email us: <a href="mailto:info@wulvanhotel.com">info@wulvancenter.com</a></li>
                 </ul>
             </div>
 
