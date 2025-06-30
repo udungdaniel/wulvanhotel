@@ -46,16 +46,6 @@ require_once('db.php');
     </div>
 </div>
 
-<!-- Responsive Autoplay Video Section -->
-<div class="container">
-    <div class="embed-responsive embed-responsive-16by9">
-        <video class="embed-responsive-item" autoplay muted controls playsinline preload="auto">
-            <source src="videos/wulvanvideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</div>
-
 <!-- Reservation Info -->
 <div id="information" class="spacer reserve-info">
 <!-- Responsive Autoplay Video Section -->
