@@ -11,24 +11,26 @@
                 </p>
             </div>
 
-            <div class="col-sm-3">
-                <h4>Quick Links</h4>
-                <ul class="list-unstyled">
-                    <li><a href="rooms-tariff.php">Rooms &amp; Rate</a></li>        
-                    <li><a href="service.php">Services</a></li>
-                    <li><a href="gallery.php">Gallery</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                    <li><a href="login.php">Admin</a></li>
-                </ul>
-            </div>
+                <div class="col-sm-3">
+                    <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="service.php">Services</a></li>
+                            <li><a href="rooms-tariff.php">Room Booking</a></li>
+                            <li><a href="hall_requests.php">Event Hall Reservation</a></li>
+                            <li><a href="bar_reservation.php">Bar Booking</a></li>
+                            <li><a href="gallery.php">Gallery</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+                            <li><a href="login.php">Admin</a></li>
+                        </ul>
+                </div>
 
-            <div class="col-sm-3">
-                <h4>Address</h4>
-                <ul class="list-unstyled">
-                    <li>Call us: <a href="tel:+2349022750031">+2349022750031</a></li>
-                    <li>Email us: <a href="mailto:info@wulvanhotel.com">info@wulvanhotel.com</a></li>
-                </ul>
-            </div>
+                <div class="col-sm-3">
+                    <h4>Address</h4>
+                    <ul class="list-unstyled">
+                        <li>Call us: <a href="tel:+2349022750031">+2349022750031</a></li>
+                        <li>Email us: <a href="mailto:info@wulvancenter.com">info@wulvancenter.com</a></li>
+                    </ul>
+                </div>
 
             <div class="col-sm-3 subscribe">
                 <h4>Follow Us on Social Media</h4>

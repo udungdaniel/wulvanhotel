@@ -74,7 +74,7 @@
         <img src="images/barrest.jpg" alt="Restaurant & Bar">
         <h4>Bar/Restaurant</h4>
         <p>Enjoy local and international meals alongside a wide variety of drinks in our stylish bar and restaurant.</p>
-       <a href="index.php#book" class= "servicebook"  > Book Now</a></botton>
+        <a href="rooms-tariff.php#book" class="btn"> Book Now</a>
     </div>
 
     <div class="hold">
