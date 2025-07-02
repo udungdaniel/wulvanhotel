@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             max-width: 700px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color:goldenrod;
             border-radius: 5px;
         }
         label { margin-top: 10px; display: block; }
@@ -99,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <textarea id="special_requests" name="special_requests" rows="3"><?php echo htmlspecialchars($_POST['special_requests'] ?? '') ?></textarea>
 
         <br>
-        <input type="submit" class="btn btn-block" value="Book Now" style="background-color: goldenrod; color: white;">
+        <input type="submit" class="btn btn-block" value="Book Now" style="background-color: white; color: black; font-weight: bold; font-size: 14px;">
     </form>
 </div>
 

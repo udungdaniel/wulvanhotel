@@ -43,6 +43,12 @@
             font-size: 14px;
             color: #555;
         }
+        .servicebook {
+            background-color: goldenrod;
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -54,21 +60,21 @@
         <img src="images/room1.jpg" alt="Rooms">
         <h4>Rooms</h4>
         <p>Relax in our comfortable rooms, featuring modern amenities and pristine cleanliness for a restful stay.</p>
-        <button style= "background-color: goldenrod; text-decoration: none;"><a href="index.php#book" color: white; > Book Now</a></botton>
+        <a href="index.php#book" class= "servicebook" > Book Now</a>
     </div>
 
     <div class="hold">
         <img src="images/events-centre.jpg" alt="Event Centre">
         <h4>Event Centre</h4>
         <p>Spacious and equipped for weddings, meetings, and conferences with full event support.</p>
-        <button style= "background-color: goldenrod; text-decoration: none;"><a href="index.php#book" color: white; > Book Now</a></botton>
+       <a href="index.php#book" class= "servicebook" > Book Now</a>
     </div>
 
     <div class="hold">
         <img src="images/barrest.jpg" alt="Restaurant & Bar">
         <h4>Bar/Restaurant</h4>
         <p>Enjoy local and international meals alongside a wide variety of drinks in our stylish bar and restaurant.</p>
-        <button style= "background-color: goldenrod; text-decoration: none;"><a href="index.php#book" color: white; > Book Now</a></botton>
+       <a href="index.php#book" class= "servicebook"  > Book Now</a></botton>
     </div>
 
     <div class="hold">

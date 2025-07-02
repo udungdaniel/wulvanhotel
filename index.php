@@ -28,6 +28,7 @@ require_once('db.php');
         @media screen and (max-width: 768px) {
             .row > div { margin-bottom: 20px; }
         }
+        
     </style>
 </head>
 <body>
