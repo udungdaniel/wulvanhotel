@@ -289,23 +289,31 @@ footer .subscribe .social a {
 }
 
 /*footer*/
-
 .toTop {
     position: fixed;
-    right: 1em;
+    right: 1.5em;
     bottom: 1em;
-    background: rgba(0, 0, 0, 0.5);
-    width: 35px;
-    height: 35px;
+    background: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     text-align: center;
+    line-height: 50px;
+    z-index: 9999;
+    transition: background 0.3s ease;
+}
+
+.toTop i {
     color: #fff;
-    font-size: 4em;
+    font-size: 45px;
+    line-height: 50px;
+    vertical-align: middle;
 }
 
 .toTop:hover {
-    color: white;
-    background: rgba(0, 0, 0, 0.8);
+    background: goldenrod;
 }
+
 
 
 

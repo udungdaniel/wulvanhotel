@@ -52,6 +52,8 @@
             background-color: goldenrod;
             border: none;
             margin-bottom: 0;
+            border: none !important;
+            box-shadow: none !important;
         }
 
         .navbar .navbar-brand {
@@ -74,6 +76,7 @@
             color: white !important;
             font-weight: 500;
         }
+
 
         @media screen and (max-width: 768px) {
             .navbar .navbar-brand span {
@@ -154,5 +157,4 @@
         </div>
     </div>
 </nav>
-<!-- /Navigation -->
-<!-- /Navigation -->
+
