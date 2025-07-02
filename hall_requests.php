@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Hall Booking Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        form { max-width: 700px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border-radius: 5px; }
+        form { max-width: 700px; margin: 20px auto; padding: 20px; background-color:goldenrod; border-radius: 5px; }
         label { margin-top: 10px; display: block; }
         input, select { width: 100%; padding: 8px; margin-top: 5px; }
         .terms { font-size: 14px; background: #fff; padding: 10px; margin-top: 20px; border: 1px solid #ddd; border-radius: 5px; }
@@ -67,11 +67,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Promotional Message -->
     <div class="promo-box">
-        <h4 style="color: #b48800;"><strong> Host your unforgetable Event in our luxurious Hall! - Book Now!</strong></h4>
+        <h4 style="color: #b48800;"><strong>🌟 Book Your Next Event at Our Premium Halls! 🌟</strong></h4>
         <p>Looking for the perfect venue to host your next event? Whether you're planning an intimate gathering or a large-scale conference, we have the ideal space for you:</p>
         <ul>
-            <li><strong> Mini Hall (1–40 Guests):</strong> Ideal for meetings, seminars, training sessions, or small celebrations. Equipped with modern amenities, air-conditioning, and high-speed Wi-Fi.</li>
-            <li><strong> International Conference Hall (Up to 500 Guests):</strong> Perfect for conferences, workshops, or corporate events with a large audience. Includes stage, podium, AV support, and professional setup.</li>
+            <li><strong>🏢 Mini Hall (1–40 Guests):</strong> Ideal for meetings, seminars, training sessions, or small celebrations. Equipped with modern amenities, air-conditioning, and high-speed Wi-Fi.</li>
+            <li><strong>🏛️ International Conference Hall (Up to 500 Guests):</strong> Perfect for conferences, workshops, or corporate events with a large audience. Includes stage, podium, AV support, and professional setup.</li>
         </ul>
         <p>Enjoy flexible booking, reliable on-site support, and a comfortable environment tailored to your event's needs. <strong>Availability is limited—reserve your date today!</strong></p>
     </div>
@@ -128,7 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <br>
-        <input type="submit" class="btn btn-block" value="Submit Booking" style="background-color: goldenrod; color: white;">
+        <input type="submit" class="btn btn-block" value="Submit Booking" style="background-color: white; color: black;">
     </form>
 </div>
 

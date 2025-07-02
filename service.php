@@ -43,16 +43,12 @@
             font-size: 14px;
             color: #555;
         }
-        .hold .btn {
+        .servicebook {
             background-color: goldenrod;
-            border: none;
             color: white;
-            margin-top: 10px;
+            padding: 8px;
+            border-radius: 4px;
         }
-        .hold .btn:hover {
-        background-color: black;
-        color: white;
-}
     </style>
 </head>
 <body>
@@ -64,14 +60,14 @@
         <img src="images/room1.jpg" alt="Rooms">
         <h4>Rooms</h4>
         <p>Relax in our comfortable rooms, featuring modern amenities and pristine cleanliness for a restful stay.</p>
-        <a href="rooms-tariff.php#book"  class= "btn"> Book Now</a>
+        <a href="index.php#book" class= "servicebook" > Book Now</a>
     </div>
 
     <div class="hold">
         <img src="images/events-centre.jpg" alt="Event Centre">
         <h4>Event Centre</h4>
         <p>Spacious and equipped for weddings, meetings, and conferences with full event support.</p>
-         <a href="rooms-tariff.php#book"  class= "btn"> Book Now</a>
+       <a href="index.php#book" class= "servicebook" > Book Now</a>
     </div>
 
     <div class="hold">
