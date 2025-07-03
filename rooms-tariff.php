@@ -59,10 +59,10 @@
     <div class="services-hold">
         <?php
         $rooms = [
-            ["Breeze Room", "₦15,000.00", "WEEK DAY RATE", "images/breeze room.webp"],
-            ["Breeze Room", "₦20,000.00", "WEEKEND RATE", "images/breeze room.webp"],
-            ["Sterling Room", "₦20,000.00", "WEEK DAY RATE", "images/sterlingroom.webp"],
-            ["Strerling Room", "₦28,000.00", "WEEKEND RATE", "images/sterlingroom.webp"],
+            ["Breeze Room", "₦15,000.00", "WEEK DAY RATE", "images/breezeroom.webp"],
+            ["Breeze Room", "₦20,000.00", "WEEKEND RATE", "images/breezeroom.webp"],
+            ["Sterling Room", "₦20,000.00", "WEEK DAY RATE", "images/sterlingroom1.webp"],
+            ["Strerling Room", "₦28,000.00", "WEEKEND RATE", "images/sterlingroom1.webp"],
             ["Aura Room", "₦25,000.00", "WEEK DAY RATE", "images/auraroom.webp"],
             ["Aura Room", "₦32,000.00", "WEEKEND RATE", "images/auraroom.webp"]
         ];
