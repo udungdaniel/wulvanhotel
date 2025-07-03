@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Promotional Message -->
     <div class="promo-box">
         <h4 style="color: #b48800;"><strong> Host Unforgettable Events in Our Luxurious Halls - Book Now!</strong></h4>
-        <p>Need a venue? We offer versatile spaces for intimate gatherings to grand conferences. Mini Hall (1-40 guests) and International Conference Hall (up to 500 guests) available, equipped with modern amenities and support. Reserve your date now!</strong></p>
+        <p>Need a venue? We offer versatile spaces for intimate gatherings to grand conferences. Mini Hall (1-40 guests) and International Conference Hall (up to 500 guests) available, equipped with modern facilities and support. Reserve your date now!</strong></p>
     </div>
 
     <form method="post">
