@@ -66,7 +66,7 @@
         <img src="images/room2.jpg" alt="Rooms">
         <h4>Rooms</h4>
         <p>Relax in our comfortable rooms, featuring modern amenities and pristine cleanliness for a restful stay.</p>
-        <a href="index.php#book" class= "servicebook" > Book Now</a>
+        <a href="rooms-tariff.php" class= "servicebook" > Book Now</a>
     </div>
 
     <div class="hold">
@@ -80,7 +80,7 @@
         <img src="images/barrest.jpg" alt="Restaurant & Bar">
         <h4>Bar/Restaurant</h4>
         <p>Enjoy local and international meals alongside a wide variety of drinks in our stylish bar and restaurant.</p>
-        <a href="rooms-tariff.php#book" class="btn"> Book Now</a>
+        <a href="bar_reservation.php" class="btn"> Book Now</a>
     </div>
 
     <div class="hold">

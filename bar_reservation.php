@@ -61,6 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .post {
            background-color:goldenrod
         }
+       
         
    </style>
 </head>
