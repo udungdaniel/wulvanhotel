@@ -11,14 +11,6 @@ if (isset($_POST['submit'])) {
 
     // Simple hardcoded login check - consider using DB and hashed passwords for production
     if ($username === "wulvanhotel" && $password === "wulvan2025") {
-$error = "";
-
-if (isset($_POST['submit'])) {
-    $username = mysqli_real_escape_string($con, strtolower($_POST['username']));
-    $password = mysqli_real_escape_string($con, $_POST['password']);
-
-    // Simple hardcoded login check - consider using DB and hashed passwords for production
-    if ($username === "wulvanhotel" && $password === "wulvan2025") {
         $_SESSION['username'] = $username;
         $_SESSION['role'] = "admin";
         header('Location: requests.php');
