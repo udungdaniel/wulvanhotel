@@ -58,7 +58,7 @@ INSERT INTO `requests` (`id`, `name`, `email`, `phone`, `checkin`, `checkout`, `
 
 
 --
--- Indexes for table `feedback`
+-- table `feedback`
 --
 ALTER TABLE `feedback`
   ADD PRIMARY KEY (`id`);
