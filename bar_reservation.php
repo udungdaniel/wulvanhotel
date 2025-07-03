@@ -58,14 +58,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         .alert { margin-top: 20px; }
         .bar-box { background-color: #fffbea; border: 1px solid #ffd76a; padding: 10px; border-radius: 5px; margin-bottom: 10px; }
+        .post {
+           background-color:goldenrod
+        }
         
    </style>
 </head>
 <body>
     <div class="bar-box">
-        <p>Welcome to our <strong>Bar Reservation Form!</strong> Whether you’re planning an intimate gathering or a larger celebration, we’re here to help you secure the perfect spot. Please fill out the form below with your details.
-        Our Mini Hall for smaller parties and our spacious Conference Hall for larger celebration. Feel free to include any special requests or accommodations you might need, and we’ll do our best to make your experience exceptional.
-        Thank you for choosing us—we look forward to welcoming you!
+        <p><strong>Book Your Event with Us!</strong><br> Fill out our bar reservation form for intimate gatherings or larger celebrations. Mini Hall for smaller parties and Conference Hall for larger events. Include special requests, and we'll make it happen. We can't wait to welcome you!
         </p>
     </div>
 
@@ -78,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="alert alert-danger"><?php echo $errorMessage; ?></div>
     <?php endif; ?>
 
-    <form method="post">
+    <form method="post" class= "post">
 
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" required value="<?php echo htmlspecialchars($_POST['name'] ?? '') ?>">
@@ -107,7 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <textarea id="special_requests" name="special_requests" rows="3"><?php echo htmlspecialchars($_POST['special_requests'] ?? '') ?></textarea>
 
         <br>
-        <input type="submit" class="btn btn-block" value="Book Now" style="background-color: goldenrod; color: white;">
+        <input type="submit" class="btn btn-block" value="Book Now" style="background-color: white; color: black; font-weight: bold; font-size: 16px;">
     </form>
 </div>
 

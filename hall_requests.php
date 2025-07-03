@@ -67,13 +67,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Promotional Message -->
     <div class="promo-box">
-        <h4 style="color: #b48800;"><strong>🌟 Book Your Next Event at Our Premium Halls! 🌟</strong></h4>
-        <p>Looking for the perfect venue to host your next event? Whether you're planning an intimate gathering or a large-scale conference, we have the ideal space for you:</p>
-        <ul>
-            <li><strong>🏢 Mini Hall (1–40 Guests):</strong> Ideal for meetings, seminars, training sessions, or small celebrations. Equipped with modern amenities, air-conditioning, and high-speed Wi-Fi.</li>
-            <li><strong>🏛️ International Conference Hall (Up to 500 Guests):</strong> Perfect for conferences, workshops, or corporate events with a large audience. Includes stage, podium, AV support, and professional setup.</li>
-        </ul>
-        <p>Enjoy flexible booking, reliable on-site support, and a comfortable environment tailored to your event's needs. <strong>Availability is limited—reserve your date today!</strong></p>
+        <h4 style="color: #b48800;"><strong> Host Unforgettable Events in Our Luxurious Halls - Book Now!</strong></h4>
+        <p>Need a venue? We offer versatile spaces for intimate gatherings to grand conferences. Mini Hall (1-40 guests) and International Conference Hall (up to 500 guests) available, equipped with modern amenities and support. Reserve your date now!</strong></p>
     </div>
 
     <form method="post">
