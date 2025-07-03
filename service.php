@@ -73,7 +73,7 @@
         <img src="images/events-centre.jpg" alt="Event Centre">
         <h4>Event Centre</h4>
         <p>Spacious and equipped for weddings, meetings, and conferences with full event support.</p>
-       <a href="index.php#book" class= "servicebook" > Book Now</a>
+       <a href="hall_requests.php" class= "servicebook" > Book Now</a>
     </div>
 
     <div class="hold">
