@@ -13,6 +13,7 @@ require_once('db.php');
     <meta name="robots" content="index, follow">
     <title>Reservation</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         img { max-width: 100%; height: auto; }
         .form-control, textarea { width: 100% !important; }
@@ -79,10 +80,6 @@ require_once('db.php');
                 $alertClass = "danger";
 
                 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
-                    // CSRF protection (optional)
-                    // if (!isset($_POST['token']) || !hash_equals($_SESSION['token'], $_POST['token'])) {
-                    //     die("Invalid CSRF token");
-                    // }
 
                     $name = trim($_POST['name']);
                     $email = trim($_POST['email']);

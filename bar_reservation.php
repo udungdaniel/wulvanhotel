@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             max-width: 700px;
             margin: 20px auto;
             padding: 20px;
-            background-color:goldenrod;
+            background-color: #f9f9f9;
             border-radius: 5px;
         }
         label { margin-top: 10px; display: block; }
@@ -57,17 +57,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin-top: 5px;
         }
         .alert { margin-top: 20px; }
-    </style>
+        .bar-box { background-color: #fffbea; border: 1px solid #ffd76a; padding: 10px; border-radius: 5px; margin-bottom: 10px; }
+        
+   </style>
 </head>
 <body>
-
-<p>Welcome to our Bar Reservation Form! Whether you’re planning an intimate gathering or a larger celebration, we’re here to help you secure the perfect spot. Please fill out the form below with your details, including your full name, contact information, preferred reservation date and time, and the expected number of guests.
-
-Select the seating capacity that best fits your group size—from our cozy Mini Hall for smaller parties to the spacious Conference Hall for larger groups. Feel free to include any special requests or accommodations you might need, and we’ll do our best to make your experience exceptional.
-
-Once submitted, your reservation will be reviewed, and one of our team members will get back to you shortly to confirm the details. Thank you for choosing us—we look forward to welcoming you!
-
-    </p>
+    <div class="bar-box">
+        <p>Welcome to our <strong>Bar Reservation Form!</strong> Whether you’re planning an intimate gathering or a larger celebration, we’re here to help you secure the perfect spot. Please fill out the form below with your details.
+        Our Mini Hall for smaller parties and our spacious Conference Hall for larger celebration. Feel free to include any special requests or accommodations you might need, and we’ll do our best to make your experience exceptional.
+        Thank you for choosing us—we look forward to welcoming you!
+        </p>
+    </div>
 
 <div class="container">
     <h2 class="text-center" style="color: goldenrod;">Bar Reservation Form</h2>
@@ -107,7 +107,7 @@ Once submitted, your reservation will be reviewed, and one of our team members w
         <textarea id="special_requests" name="special_requests" rows="3"><?php echo htmlspecialchars($_POST['special_requests'] ?? '') ?></textarea>
 
         <br>
-        <input type="submit" class="btn btn-block" value="Book Now" style="background-color: white; color: black; font-weight: bold; font-size: 14px;">
+        <input type="submit" class="btn btn-block" value="Book Now" style="background-color: goldenrod; color: white;">
     </form>
 </div>
 
