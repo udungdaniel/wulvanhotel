@@ -49,6 +49,12 @@
             padding: 8px;
             border-radius: 4px;
         }
+        .btn {
+            background-color: goldenrod;
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -57,7 +63,7 @@
 
 <div class="services-hold">
     <div class="hold">
-        <img src="images/room1.jpg" alt="Rooms">
+        <img src="images/room2.jpg" alt="Rooms">
         <h4>Rooms</h4>
         <p>Relax in our comfortable rooms, featuring modern amenities and pristine cleanliness for a restful stay.</p>
         <a href="index.php#book" class= "servicebook" > Book Now</a>
